@@ -1,0 +1,41 @@
+Risks in economic networks: Increasing complexity, cascading failures, global dependencies
+
+Frank Schweitzer
+Chair of Systems Design, ETH Zurich, Switzerland
+
+
+In my talk, I discuss different sources of risk in economic systems and ways to model them using formal agent-based and data-driven models.
+
+Increasing complexity: Economic systems are often represented as networks, to address the interactions between economic agents. Examples are financial transfers between banks, but also relations between firms and cities. More important, but less understood, is the coupling between different network layers, each representing a particular type of relation, such as ownership, R\&D collaborations. Within and across layers, risk can spread in various and often unconsidered ways. Risk can further emerge from the fact that in many cases we have only aggregated information about agents (e.g. financial intermediaries), but no detailed information about their interactions.
+
+Cascading failures: For the propagation of failures within and across network layers details matter: network size and topology, coupling strengths, redistribution mechanisms, agent's fragility, impact of external shocks. Formal agent-based models that still allow to estimate the resulting cascade sizes are discussed. 
+
+Global dependencies: As an application scenario, a data-driven model of cascades in the international crop trade network is presented. Similar to supply chains, external shocks on food suppliers (countries) impact importers not only directly, but also indirectly, but the latter is difficult to quantify. A systematic study of shock scenarios is still possible and allows to calculate different indicators for systemic risk.
+
+
+References:
+
+1. Burkholz, Rebekka; Schweitzer, Frank: International crop trade networks: The impact of shocks and cascades, Environmental Research Letters (online first) [2019]	
+   
+2. Zhang, Yan; Schweitzer, Frank: The interdependence of corporate reputation and ownership: A network approach to quantify reputation,  Royal Society Open Science (online first) [2019]	
+   
+3. Garas, Antonios; Rozenblat, Celine; Schweitzer, Frank: Economic Specialization and the Nested Bipartite Network of City-Firm Relations, In: Multiplex and Multilevel Networks, Oxford University Press, pages 74-83 [2019]
+
+4.  Burkholz, Rebekka; Herrmann, H. J.; Schweitzer, Frank:  Explicit size distributions of failure cascades redefine systemic risk on finite networks, Scientific Reports, vol: 8, number: 6878 [2018] 
+
+5. Burkholz, Rebekka; Schweitzer, Frank:  Correlations between thresholds and degrees: An analytic approach to model attacks and failure cascades, Physical Review E , vol: 98, number: 022306 [2018]	
+
+6. Burkholz, Rebekka; Schweitzer, Frank: A framework for cascade size calculations on random networks, Physical Review E, vol: 97, number: 042312 [2018]		
+ 
+7. Burkholz, Rebekka; Garas, Antonios; Schweitzer, Frank:  How damage diversification can reduce systemic risk, Physical Review E, vol: 93, number: 042313 [2016]	
+
+8. Burkholz, Rebekka; Leduc, Matt; Garas, Antonios; Schweitzer, Frank:  Systemic risk in multiplex networks with asymmetric coupling and threshold feedback, Physica D, vol: 323-324, pages: 64-72 [2016]	
+
+9. Nanumyan, Vahan; Garas, Antonios; Schweitzer, Frank:  The Network of Counterparty Risk: Analysing Correlations in OTC Derivatives, PLOS ONE, vol: 10, number: e0136638 [2015]	
+
+10. Tasca, Paolo; Mavrodiev, Pavlin; Schweitzer, Frank:  Quantifying the Impact of Leveraging and Diversification on Systemic Risk, Journal of Financial Stability, vol: 15, pages: 43-52 [2014]	
+
+11. Tessone, Claudio Juan; Garas, Antonios; Guerra, Beniamino; Schweitzer, Frank:  How big is too big? Critical shocks for systemic failure cascades, Journal of Statistical Physics, vol: 151, pages: 765-783 [2013]	
+
+12. Lorenz, Jan; Battiston, Stefano; Schweitzer, Frank:  Systemic risk in a unifying framework for cascading processes on networks, European Physical Journal B, vol: 71, pages: 441-460 [2009]	
+
