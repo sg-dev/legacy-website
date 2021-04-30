@@ -1,0 +1,3759 @@
+<!doctype html> 
+
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-us"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en-us"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> 
+<html class="no-js" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" ><!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="ETH, Zurich, System Design, Research, complex systems theory, Complex Network, Empirical research, models of interacting agents, economic systems
+  " />
+    <meta name="description" content="" />
+    <meta name="robots" content="index,follow,noodp" />
+	<meta name="copyright" content="ETH Zuerich" />
+    <meta name="author" content="emresar" />
+    <meta name="Description" content="ETH Zuerich" />
+    <meta name="google-site-verification" content="ovt9uOlEo8WFy0jxwzX-pwG6Jb6-zHclSWPcsTkeEi8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en-us"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width">
+    
+
+    
+    <link rel="icon" href="../../media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../media/favicon.ico" type="image/x-icon">
+
+    
+    
+    
+
+    <link rel="stylesheet" href="../../media/css/colors_c110.css" />
+    <link rel="stylesheet" href="../../media/css/global.css" />
+	<!--link rel="stylesheet" href="/media/css/pjsstyle.css"/-->
+	<link rel="stylesheet" href="../../media/lib/fancybox/jquery.fancybox-1.3.1.css"/>
+	<link rel="stylesheet" href="../../media/css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../../media/css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet"/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="../../media/css/bootstrap-datepicker-1.4.1.min.css" rel="stylesheet"/>
+
+    
+    
+
+    
+
+
+	<!--script>window.jQuery || document.write('<script src="/media/lib/jquery/jquery-1.5.1.min.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/media/lib/jquery/jquery-1.5.1.min.js"></script-->
+    <!--script type="text/javascript" src="http://www.sg.ethz.ch/scripts/scripts.js"></script--> 
+    <!--script>window.jQuery || document.write('<script src="http://code.jquery.com/jquery-latest.min.js">\x3C/script>')</script-->    
+    
+    
+    <!--script type="text/javascript" src="/media/js/jquery-latest.min.js"></script-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../../media/lib/modernizr/modernizr-1.7.min.js"></script> 
+	<script type="text/javascript" src="../../media/lib/fancybox/jquery.fancybox-1.3.1.js"></script>
+ 	<script type="text/javascript" src="../../media/js/jquery.scrollTo-1.4.3.1-min.js"></script>    
+
+ 	
+  	<!--script type="text/javascript" src="/media/js/processing.js"></script-->
+    <script type="text/javascript" src="../../media/js/protovis-r3.2.js"></script>
+	<!--script type="text/javascript" src="/media/js/bootstrap/bootstrap.min.js"></script-->
+	<script type="text/javascript" src="../../media/js/bootstrap-datepicker-1.4.1.min.js"></script>
+
+ 	
+    <title>
+    Social Software Engineering - ETH - Chair of Systems Design - Welcome
+    </title>
+
+    
+    
+    <style media="print" type="text/css">
+		@media print
+		{
+			@page {
+  				size: A4 portrait;
+				margin: 20px;
+			}
+			/*body * { visibility: hidden; }
+			#main * { visibility: visible; }
+			#main { position: absolute; top:10px !important; width:1200px !important;margin: 10px 10px 50px 50px !important; }
+			*/
+		}
+		
+		
+	</style>
+	    
+
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-59714351-1', 'auto');
+		  ga('send', 'pageview');
+	
+	</script>
+
+    
+</head>
+
+<body id="id_social-se" class="en standard-template bg_logo_home">
+
+	
+
+	<div id="moodboard-ethlogo">
+
+		<script>
+			$('div#moodboard-ethlogo').click( function(){ 
+				window.open( "http://www.ethz.ch");
+			});
+		</script>
+ 
+
+	</div>
+	
+	
+	<div id="sg-logo">Chair of Systems Design
+		<script>
+			$('div#sg-logo').click( function(){ 
+				window.location="/"; 
+			});
+		</script>
+			
+	</div> 
+
+
+
+	<div id="moodboard">
+		
+
+		
+		<div id="searchbar">
+			
+			
+		<!--div id="home-button">
+			<script>
+					$('div#home-button').click( function(){ 
+						window.location="/"; 
+					});
+				</script>
+		</div-->
+		
+			<form  method="get" action="https://www2.sg.ethz.ch/search/" >
+				<span class="form-item">
+	    			<input style="width:120px;" name="q" type="text" class="search-query" placeholder="Search">
+				</span>
+			</form>
+			
+		</div>
+
+	</div>
+	
+	
+	
+
+	<!--script>
+
+		$("div#moodboard").click(function() {
+			
+			if ( $(this).hasClass('expanded')) {
+			
+				//$(this).animate( { 'max-height': '100','overflow':'hidden' },1000,'linear',function() {
+  					$(this).css('max-height', "100px");
+  					$(this).removeClass('expanded');
+				//});
+			}
+			else{
+
+				
+				$(this).animate( { 'max-height': '500','overflow':'none' },2000,'linear',function() {
+  					$(this).addClass('expanded')
+				});
+			}
+	
+		});
+
+	</script-->
+
+	
+	
+
+
+	
+
+
+<div class="">
+	
+	<div id="navigation" >
+
+		<div id="topnavbar">
+	
+		
+    		 
+    	<table>
+
+			<tr>
+	        	
+	         	
+		       		<td id="nav-team"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../team/index.html">Team</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-team" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-team" class="subnav"><a href="../../team/index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-dissertations" class="subnav "><a href="../../team/dissertations/index.html">Dissertations</a></p>
+				        			
+				        				<p id="subnav-people" class="subnav "><a href="../../team/people/index.html">People</a></p>
+				        			
+				        				<p id="subnav-former-collaborators" class="subnav last"><a href="../../team/former-collaborators/index.html">Former Collaborators</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-team').mouseover( function(){
+        				
+        							if( $('div#navmenu-team').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-team').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-team').mouseleave( function(){
+        							$('div#navmenu-team').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-research"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../index.html">Research</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-research" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-research" class="subnav"><a href="../index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-dynamic-networks" class="subnav "><a href="../dynamic-networks/index.html">Temporal networks</a></p>
+				        			
+				        				<p id="subnav-multi-layered-network" class="subnav "><a href="../multi-layered-network/index.html">Multi-layered networks</a></p>
+				        			
+				        				<p id="subnav-systemic-risk" class="subnav "><a href="../systemic-risk/index.html">Models of systemic risk</a></p>
+				        			
+				        				<p id="subnav-analyses-biological-systems" class="subnav "><a href="../analyses-biological-systems/index.html">Biological systems</a></p>
+				        			
+				        				<p id="subnav-applications-software-engineering" class="subnav "><a href="../applications-software-engineering/index.html">Software engineering</a></p>
+				        			
+				        				<p id="subnav-online-social-networks" class="subnav "><a href="../online-social-networks.html">Online Social Networks</a></p>
+				        			
+				        				<p id="subnav-animal-societies" class="subnav "><a href="../animal-societies/index.html">Animal groups</a></p>
+				        			
+				        				<p id="subnav-design-and-analysis-socio-technical-systems" class="subnav "><a href="../design-and-analysis-socio-technical-systems/index.html">Socio-technical systems</a></p>
+				        			
+				        				<p id="subnav-social-se" class="subnav "><a href="index.html">Social Software Engineering</a></p>
+				        			
+				        				<p id="subnav-opinion-dynamics-and-social-influence" class="subnav "><a href="../opinion-dynamics-and-social-influence/index.html">Opinion dynamics</a></p>
+				        			
+				        				<p id="subnav-emotional-influence" class="subnav "><a href="../emotional-influence/index.html">Emotional influence</a></p>
+				        			
+				        				<p id="subnav-mechanism-design-outbreak-cooperation" class="subnav "><a href="../mechanism-design-outbreak-cooperation/index.html">Outbreak of cooperation</a></p>
+				        			
+				        				<p id="subnav-research-and-development-rd-networks" class="subnav "><a href="../research-and-development-rd-networks/index.html">R&amp;D networks</a></p>
+				        			
+				        				<p id="subnav-financial-networks" class="subnav "><a href="../financial-networks/index.html">Financial networks</a></p>
+				        			
+				        				<p id="subnav-ownership-networks" class="subnav "><a href="../ownership-networks/index.html">Ownership networks</a></p>
+				        			
+				        				<p id="subnav-response-media" class="subnav last"><a href="../response-media/index.html">Response in Media</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-research').mouseover( function(){
+        				
+        							if( $('div#navmenu-research').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-research').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-research').mouseleave( function(){
+        							$('div#navmenu-research').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-projects"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../projects/index.html">Projects</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-projects" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-projects" class="subnav"><a href="../../projects/index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-snsf-federal-assembly" class="subnav "><a href="../../projects/snsf-federal-assembly/index.html">SNSF: 127 years of Swiss Parliament</a></p>
+				        			
+				        				<p id="subnav-sdsc" class="subnav "><a href="../../projects/sdsc/index.html">SDSC: Democracy Studies</a></p>
+				        			
+				        				<p id="subnav-et-sp-rc-systemic-risk-privacy-online-interaction" class="subnav "><a href="../../projects/et-sp-rc-systemic-risk-privacy-online-interaction/index.html">ET SP-RC: Systemic Risk for Privacy in Online Interaction</a></p>
+				        			
+				        				<p id="subnav-seri-information-spaces" class="subnav "><a href="../../projects/seri-information-spaces/index.html">SERI: Information Spaces</a></p>
+				        			
+				        				<p id="subnav-mtec-interaction-patterns" class="subnav "><a href="../../projects/mtec-interaction-patterns/index.html">MTEC: Interaction patterns</a></p>
+				        			
+				        				<p id="subnav-snsf-emotional-interactions" class="subnav "><a href="../../projects/snsf-emotional-interactions/index.html">SNSF: Emotional Interactions</a></p>
+				        			
+				        				<p id="subnav-eth-sp-rc-performance-and-resilience-collaboration-networks" class="subnav "><a href="../../projects/eth-sp-rc-performance-and-resilience-collaboration-networks/index.html">ETH SP-RC: Performance and resilience of collaboration networks</a></p>
+				        			
+				        				<p id="subnav-eu-cost-knowescape-information-landscapes" class="subnav "><a href="../../projects/eu-cost-knowescape-information-landscapes/index.html">EU COST: KNOWeSCAPE - Information Landscapes</a></p>
+				        			
+				        				<p id="subnav-eth-systemic-risks-systemic-solutions" class="subnav "><a href="../../projects/eth-systemic-risks-systemic-solutions/index.html">ETH: Systemic Risks, Systemic Solutions</a></p>
+				        			
+				        				<p id="subnav-eu-multilevel-complex-networks" class="subnav "><a href="../../projects/eu-multilevel-complex-networks/index.html">EU: Multilevel Complex Networks</a></p>
+				        			
+				        				<p id="subnav-payoffs-local-and-global-network-structures-reproductive-career-paths-wild-house-mice" class="subnav "><a href="../../projects/payoffs-local-and-global-network-structures-reproductive-career-paths-wild-house-mice/index.html">SNSF: Payoffs of Networks</a></p>
+				        			
+				        				<p id="subnav-topology-adaptation-trust-based-search-peer-peer-networks" class="subnav "><a href="../../projects/topology-adaptation-trust-based-search-peer-peer-networks/index.html">SNSF ISJRP: Trust-based search in P2P Networks </a></p>
+				        			
+				        				<p id="subnav-forecasting-financial-crises" class="subnav "><a href="../../projects/forecasting-financial-crises/index.html">EU: Forecasting Financial Crises</a></p>
+				        			
+				        				<p id="subnav-otc-derivatives-and-systemic-risk-financial-networks" class="subnav "><a href="../../projects/otc-derivatives-and-systemic-risk-financial-networks/index.html">SNSF: OTC Derivatives</a></p>
+				        			
+				        				<p id="subnav-snsf-rd-network-life-cycles" class="subnav "><a href="../../projects/snsf-rd-network-life-cycles/index.html">SNSF: R&amp;D Network Life Cycles</a></p>
+				        			
+				        				<p id="subnav-oss" class="subnav "><a href="../../projects/oss/index.html">SNSF: Social Interactions and Architecture in OSS</a></p>
+				        			
+				        				<p id="subnav-cyberemotions" class="subnav "><a href="../../projects/cyberemotions/index.html">EU: Cyberemotions</a></p>
+				        			
+				        				<p id="subnav-eth-ccss-coping-crises" class="subnav "><a href="../../projects/eth-ccss-coping-crises/index.html">ETH: CCSS - Coping with Crises</a></p>
+				        			
+				        				<p id="subnav-seri-agents-competing-centrality" class="subnav "><a href="../../projects/seri-agents-competing-centrality/index.html">SERI: Agents Competing for Centrality</a></p>
+				        			
+				        				<p id="subnav-projects-finished-2012" class="subnav last"><a href="../../projects/projects-finished-2012/index.html">Projects finished before 2012</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-projects').mouseover( function(){
+        				
+        							if( $('div#navmenu-projects').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-projects').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-projects').mouseleave( function(){
+        							$('div#navmenu-projects').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-publications"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../publications/index.html">Publications</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-teaching"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../teaching/index.html">Teaching</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-teaching" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-teaching" class="subnav"><a href="../../teaching/index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-sds" class="subnav "><a href="../../teaching/sds/index.html">Social Data Science</a></p>
+				        			
+				        				<p id="subnav-systems-dynamics-and-complexity" class="subnav "><a href="../../teaching/systems-dynamics-and-complexity/index.html">Systems Dynamics and Complexity</a></p>
+				        			
+				        				<p id="subnav-abm" class="subnav "><a href="../../teaching/abm/index.html">Agent-Based Modelling of Social Systems</a></p>
+				        			
+				        				<p id="subnav-cn" class="subnav "><a href="../../teaching/cn/index.html">Complex Networks</a></p>
+				        			
+				        				<p id="subnav-theses" class="subnav last"><a href="../../teaching/theses/index.html">Theses</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-teaching').mouseover( function(){
+        				
+        							if( $('div#navmenu-teaching').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-teaching').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-teaching').mouseleave( function(){
+        							$('div#navmenu-teaching').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-services"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../services/index.html">Services</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-services" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-services" class="subnav"><a href="../../services/index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-scientific-journals" class="subnav "><a href="../../services/scientific-journals/index.html">Scientific Journals</a></p>
+				        			
+				        				<p id="subnav-downloads" class="subnav last"><a href="../../services/downloads/index.html">Downloads</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-services').mouseover( function(){
+        				
+        							if( $('div#navmenu-services').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-services').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-services').mouseleave( function(){
+        							$('div#navmenu-services').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-activities-events"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../activities-events/index.html">Activities&amp;Events</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-activities-events" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-activities-events" class="subnav"><a href="../../activities-events/index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-talks" class="subnav "><a href="../../activities-events/talks/index.html">Talks</a></p>
+				        			
+				        				<p id="subnav-sg-seminars-2015-" class="subnav "><a href="../../activities-events/sg-seminars-2015-/index.html">SG Seminars 2015-</a></p>
+				        			
+				        				<p id="subnav-sg-seminars-2005-2014" class="subnav "><a href="../../activities-events/sg-seminars-2005-2014/index.html">SG Seminars 2005-2014</a></p>
+				        			
+				        				<p id="subnav-workshops" class="subnav "><a href="../../activities-events/workshops/index.html">Workshops</a></p>
+				        			
+				        				<p id="subnav-eurocssworkshop" class="subnav "><a href="../../activities-events/eurocssworkshop/index.html">Introduction to multi-edge network inference in R using the ghypernet-package</a></p>
+				        			
+				        				<p id="subnav-symposium-economic-networks" class="subnav "><a href="../../activities-events/symposium-economic-networks/index.html">Symposium Economic Networks</a></p>
+				        			
+				        				<p id="subnav-symposium-temp-networks" class="subnav "><a href="../../activities-events/symposium-temp-networks/index.html">Symposium Networks, Time and Causality</a></p>
+				        			
+				        				<p id="subnav-second-symposium-computational-social-science" class="subnav "><a href="../../activities-events/second-symposium-computational-social-science/index.html">Second Symposium Computational Social Science</a></p>
+				        			
+				        				<p id="subnav-symposium-computational-social-science" class="subnav "><a href="../../activities-events/symposium-computational-social-science/index.html">Symposium Computational Social Science</a></p>
+				        			
+				        				<p id="subnav-10-years-anniversary" class="subnav "><a href="../../activities-events/10-years-anniversary/index.html">10 Years Anniversary</a></p>
+				        			
+				        				<p id="subnav-european-symposium-societal-challenges-computational-social-science" class="subnav last"><a href="../../activities-events/european-symposium-societal-challenges-computational-social-science/index.html">European Symposium on Societal Challenges in Computational Social Science</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-activities-events').mouseover( function(){
+        				
+        							if( $('div#navmenu-activities-events').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-activities-events').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-activities-events').mouseleave( function(){
+        							$('div#navmenu-activities-events').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-eth-risk-center"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../eth-risk-center/index.html">ETH Risk Center</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-eth-risk-center" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-eth-risk-center" class="subnav"><a href="../../eth-risk-center/index.html">Overview</a></p>
+
+					        	
+				        			
+				        				<p id="subnav-eth-risk-center-working-paper-series" class="subnav "><a href="https://www2.sg.ethz.ch/eth-risk-center/eth-risk-center-working-paper-series/">ETH Risk Center Working Paper Series</a></p>
+				        			
+				        				<p id="subnav-ccss-working-paper-series" class="subnav last"><a href="../../eth-risk-center/ccss-working-paper-series/index.html">CCSS Working Paper Series</a></p>
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-eth-risk-center').mouseover( function(){
+        				
+        							if( $('div#navmenu-eth-risk-center').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-eth-risk-center').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-eth-risk-center').mouseleave( function(){
+        							$('div#navmenu-eth-risk-center').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-open-positions"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../open-positions/index.html">Open positions</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						  
+		              	<div id="navmenu-open-positions" class="topnavmenu" >
+		                   
+				        	
+					        	<p id="subnav-open-positions" class="subnav"><a href="../../open-positions/index.html">Overview</a></p>
+
+					        	
+				        			
+				        	 	
+		           
+		            	</div>
+		
+		            	<script>
+							
+	        					$('td#nav-open-positions').mouseover( function(){
+        				
+        							if( $('div#navmenu-open-positions').css('display') == "none"  ){
+        								$('div.topnavmenu').hide(100);	
+        								$('div#navmenu-open-positions').slideDown(400);
+        							}			
+        						});
+
+								$('td#nav-open-positions').mouseleave( function(){
+        							$('div#navmenu-open-positions').hide(100);
+								});  
+							
+        				</script>
+        				
+		            	
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+	         	
+		       		<td id="nav-contact-us"  >
+		       			<div class="nav">
+		       				
+		       				<table>
+		       					<tr>
+		       						<td>
+		       							<div class="nav-arrow"></div>
+		            				</td>
+		            				<td>
+		            					<div>
+
+		            						<a style="" href="../../contact-us/index.html">Contact us</a>
+		           						</div>
+		           					</td>
+		           				</tr>
+		           			</table>
+		           		</div>
+						
+						
+		            	
+		            	
+		            	
+		            	
+		            </td>
+		            
+	    		
+    		</tr>
+    		
+		</table>   
+    	<script>
+    		$('div.nav').removeClass('nav-clicked');
+        	$('td#nav-social-se div.nav').addClass('nav-clicked');
+    	</script>
+		</div>
+	</div>
+
+
+	
+
+
+        
+        	
+	        
+	       	
+
+				
+				
+					
+				
+	
+				
+					
+
+						
+						
+
+						
+							<div id="navbar">
+
+								<div id="sidenavigation" class="nav" style="padding:0" >
+									<div id="nav-submenu-" >				        		
+					        		
+					        		       			
+					        			<p class="subnav "><a href="https://www2.sg.ethz.ch/research/social-se/introduction/">Introduction</a></p>
+					        		       			
+					        			<p class="subnav "><a href="bug-categorization/index.html">Automated Bug Categorization</a></p>
+					        		       			
+					        			<p class="subnav "><a href="oss-communities/index.html">Structure and Evolution of OSS Communities</a></p>
+					        		       			
+					        			<p class="subnav last"><a href="data/index.html">Data</a></p>
+					        		
+									</div>
+				        		</div>				        		
+					        </div>	
+						
+
+        			
+        			
+				
+        			
+        	
+        	
+                		
+	
+	
+
+	</div>
+
+
+
+
+
+
+<div class="hidden-desktop hidden-phone hidden-tablet">
+
+	
+    
+	<div id="navbar" >
+	    
+	    <div id="sidenavigation" >
+	    	
+	    		       		
+	       	
+	    		
+	    	
+	    		 
+	
+	        
+	        	
+	            <div id="nav-introduction" class="nav">
+	            	<table>
+		            	<td id="nav-introduction" class="nav">
+		            		Introduction <!--  -->
+		             	</td>
+		             	<td>
+		             		
+		            	            	
+		            	
+	            		</td>
+	            	</table>            	
+	            </div>
+	       		 
+	        	
+	        
+	        	
+		        	
+		        		
+		        	
+	        		
+	        		
+	        		<div id="nav-submenu-introduction" class="nav-submenu">
+	
+	        				
+	        			
+	        		</div>
+	        		
+	        		<script>
+	        		
+	        		
+	        		   	$('td#nav-introduction').click( function(){ 
+	        				window.location="/research/social-se/introduction/"; 
+	        			});
+	
+	        		   	$('span#subnav-more-introduction').click( function(){ 
+	        		   		$('span.subnav-more').show();
+	        				$(this).hide();
+	        				$('span.subnav-less').hide();
+	        				$('span#subnav-less-introduction').show();   
+	        							
+	        				$('div.nav-submenu').hide(500);	
+	        				$('div#nav-submenu-introduction').show(500);
+			     				
+	        			});
+	        		
+	        			$('span#subnav-less-introduction').click( function(){ 
+	        				$(this).hide();
+	        				
+	        				$('span#subnav-more-introduction').show();    
+	        				
+	        				$('div#nav-submenu-introduction').hide(500);
+			
+	        			});
+								        		
+	        		</script>
+	        	
+	        	
+	        		
+	    	
+	        	
+	            <div id="nav-bug-categorization" class="nav">
+	            	<table>
+		            	<td id="nav-bug-categorization" class="nav">
+		            		Automated Bug Categorization <!--  -->
+		             	</td>
+		             	<td>
+		             		
+		            	            	
+		            	
+	            		</td>
+	            	</table>            	
+	            </div>
+	       		 
+	        	
+	        
+	        	
+		        	
+		        		
+		        	
+	        		
+	        		
+	        		<div id="nav-submenu-bug-categorization" class="nav-submenu">
+	
+	        				
+	        			
+	        		</div>
+	        		
+	        		<script>
+	        		
+	        		
+	        		   	$('td#nav-bug-categorization').click( function(){ 
+	        				window.location="/research/social-se/bug-categorization/"; 
+	        			});
+	
+	        		   	$('span#subnav-more-bug-categorization').click( function(){ 
+	        		   		$('span.subnav-more').show();
+	        				$(this).hide();
+	        				$('span.subnav-less').hide();
+	        				$('span#subnav-less-bug-categorization').show();   
+	        							
+	        				$('div.nav-submenu').hide(500);	
+	        				$('div#nav-submenu-bug-categorization').show(500);
+			     				
+	        			});
+	        		
+	        			$('span#subnav-less-bug-categorization').click( function(){ 
+	        				$(this).hide();
+	        				
+	        				$('span#subnav-more-bug-categorization').show();    
+	        				
+	        				$('div#nav-submenu-bug-categorization').hide(500);
+			
+	        			});
+								        		
+	        		</script>
+	        	
+	        	
+	        		
+	    	
+	        	
+	            <div id="nav-oss-communities" class="nav">
+	            	<table>
+		            	<td id="nav-oss-communities" class="nav">
+		            		Structure and Evolution of OSS Communities <!--  -->
+		             	</td>
+		             	<td>
+		             		
+		            	            	
+		            	
+	            		</td>
+	            	</table>            	
+	            </div>
+	       		 
+	        	
+	        
+	        	
+		        	
+		        		
+		        	
+	        		
+	        		
+	        		<div id="nav-submenu-oss-communities" class="nav-submenu">
+	
+	        				
+	        			
+	        		</div>
+	        		
+	        		<script>
+	        		
+	        		
+	        		   	$('td#nav-oss-communities').click( function(){ 
+	        				window.location="/research/social-se/oss-communities/"; 
+	        			});
+	
+	        		   	$('span#subnav-more-oss-communities').click( function(){ 
+	        		   		$('span.subnav-more').show();
+	        				$(this).hide();
+	        				$('span.subnav-less').hide();
+	        				$('span#subnav-less-oss-communities').show();   
+	        							
+	        				$('div.nav-submenu').hide(500);	
+	        				$('div#nav-submenu-oss-communities').show(500);
+			     				
+	        			});
+	        		
+	        			$('span#subnav-less-oss-communities').click( function(){ 
+	        				$(this).hide();
+	        				
+	        				$('span#subnav-more-oss-communities').show();    
+	        				
+	        				$('div#nav-submenu-oss-communities').hide(500);
+			
+	        			});
+								        		
+	        		</script>
+	        	
+	        	
+	        		
+	    	
+	        	
+	            <div id="nav-data" class="nav">
+	            	<table>
+		            	<td id="nav-data" class="nav">
+		            		Data <!--  -->
+		             	</td>
+		             	<td>
+		             		
+		            	            	
+		            	
+	            		</td>
+	            	</table>            	
+	            </div>
+	       		 
+	        	
+	        
+	        	
+		        	
+		        		
+		        	
+	        		
+	        		
+	        		<div id="nav-submenu-data" class="nav-submenu">
+	
+	        				
+	        			
+	        		</div>
+	        		
+	        		<script>
+	        		
+	        		
+	        		   	$('td#nav-data').click( function(){ 
+	        				window.location="/research/social-se/data/"; 
+	        			});
+	
+	        		   	$('span#subnav-more-data').click( function(){ 
+	        		   		$('span.subnav-more').show();
+	        				$(this).hide();
+	        				$('span.subnav-less').hide();
+	        				$('span#subnav-less-data').show();   
+	        							
+	        				$('div.nav-submenu').hide(500);	
+	        				$('div#nav-submenu-data').show(500);
+			     				
+	        			});
+	        		
+	        			$('span#subnav-less-data').click( function(){ 
+	        				$(this).hide();
+	        				
+	        				$('span#subnav-more-data').show();    
+	        				
+	        				$('div#nav-submenu-data').hide(500);
+			
+	        			});
+								        		
+	        		</script>
+	        	
+	        	
+	        		
+	    	
+	        
+		</div>
+	       	
+	</div>
+
+	
+
+</div>
+		
+
+
+	
+	
+		
+	
+	
+
+
+
+	
+
+    	<div id="main">
+
+
+
+    		<table>
+    	
+    			<tr>
+    				<td colspan="3" id="main-top" class="main-social-se">
+    					
+    				    
+
+    						
+
+
+	<div class="content richtext">
+			
+			<h2>Social Software Engineering</h2>
+		
+	
+		<p class="p"> <p>Besides being a problem that is challenging from a technical point of view, <strong>software engineering processes</strong> also comprise numerous interesting <strong>social aspects</strong> that deserve to be studied scientifically. Representing one particularly interesting type of socio-technical system, we thus investigate the social structures and dynamics of collaborative software engineering processes. We are generally interested in the question how particular ways to structure collaborations, or to distribute tasks and responsibilities in software development teams will positively or negatively affect the performance of the project.</p>
+<p>Our research methodology is data-driven, i.e. we analyse large-scale data sets capturing social dynamics in collaborative software engineering and make use of recent advances in the theory of complex systems, complex networks, machine learning and statistical analysis of big data.<br />For this purpose, we commonly make use of available data on the community of developers and contributors to large-scale Open Source Software projects such as Eclipse, NetBeans, KDE, Linux or the Linux distribution Gentoo. Studying the evolution of the social organisation of these projects over periods of more than one decade, we can then try to link the performance of the projects to features of the collaboration or communication networks in their underlying communities.</p>
+<p>&nbsp;</p>
+<p><img style="width: 600px;" src="../../media/medialibrary/2013/01/iccsw.png" alt="" /></p>
+<p><em>Collaboration structures of several software development communities. Nodes represent contributors to the project, links&nbsp;represent collaborations between them. This picture illustrates the significant differences between highly centralized projects (left), projects with a modular or hierarchical social organisation (middle) and projects with less structured collaboration networks (right).</em></p>
+<p>&nbsp;</p>
+<p>Our recent research in this area has uncovered interesting <strong>relations between the topology of collaborations and both individual and collective performance </strong>in software development projects. Through a case study of the software project Gentoo, we were able to find empirical evidence for that fact that the runaway <em>centralisation</em> of collaboration structures poses a severe risk to software projects, resulting in a severe and lasting drop in performance if one of the central collaborators decides to leave the project. Using data of evolving collaboration structures, we were further able to show that the presence of such central collaborators results in a decreasing commitment of the remaining community, thus further driving an increasing centralisation.</p>
+<p>Apart from such empirical studies, we have also used our complex systems and complex networks perspective to <strong>suggest concrete improvements of online collaboration tools</strong>. Again using large-scale data sets on collaborative software engineering projects, we were able to show that the collaboration structures of software development communities can be used to automatically assess the quality of bug reports that contributors submit to the community. We not only show that there is a statistically significant relation between the information provided in bug reports and the collaboration networks into which the reporting user is embedded. We also use state-of-the-art machine learning techniques to develop a fully automatic classifier which can be directly used to <strong>mitigate the information overload</strong> which is a severe problem for many of the large-scale software engineering projects.</p>
+<p>We would like to highlight that in the research summarised above, we particularly avoid to oversimplify complex engineering processes by integrating hands-on experience in software engineering with expertise in data mining and the modeling and analysis of complex systems. Through the unique combination of competencies in computer science, statistical data analysis and complex networks theory present in our team, we were able to publish our results not only in interdisciplinary journals like \emph{Advances in Complex Systems}, but also in premium software engineering venues such as the \emph{International Conference on Software Engineering}. Apart from this scientific recognition, our research results have further attracted significant attention from industry, as documented by <strong>talk invitations from major software companies</strong> such as Google, IBM and DATEV.</p></p>
+	</div>
+
+
+
+
+
+	<div class="content richtext">
+		
+	
+		<p class="p"> <h3>Selected Publications</h3></p>
+	</div>
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-464-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									From Aristotle to Ringelmann: A large-scale analysis of team productivity and coordination in Open Source Software projects
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2016]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Scholtes, Ingo</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Mavrodiev, Pavlin</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> Empirical Software Engineering,
+										
+											pages: 642-683,
+										
+										
+											volume: 21,
+										
+										
+											number: 2
+										
+									</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-464-more-">more»</a> <a class="bold" style="display:none;" id="pub-464-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-464-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://dx.doi.org/10.1007/s10664-015-9406-4" target="_blank">10.1007/s10664-015-9406-4</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>Complex software development projects rely on the contribution of teams of developers, who are required to collaborate and coordinate their efforts. The productivity of such development teams, i.e., how their size is related to the produced output, is an important consideration for project and schedule management as well as for cost estimation. The majority of studies in empirical software engineering suggest that - due to coordination overhead - teams of collaborating developers become less productive as they grow in size. This phenomenon is commonly paraphrased as Brooks’ law of software project management, which states that “adding manpower to a software project makes it later”. Outside software engineering, the non-additive scaling of productivity in teams is often referred to as the Ringelmann effect, which is studied extensively in social psychology and organizational theory. Conversely, a recent study suggested that in Open Source Software (OSS) projects, the productivity of developers increases as the team grows in size. Attributing it to collective synergetic effects, this surprising finding was linked to the Aristotelian quote that “the whole is more than the sum of its parts”. Using a data set of 58 OSS projects with more than 580,000 commits contributed by more than 30,000 developers, in this article we provide a large-scale analysis of the relation between size and productivity of software development teams. Our findings confirm the negative relation between team size and productivity previously suggested by empirical software engineering research, thus providing quantitative evidence for the presence of a strong Ringelmann effect. Using fine-grained data on the association between developers and source code files, we investigate possible explanations for the observed relations between team size and productivity. In particular, we take a network perspective on developer-code associations in software development teams and show that the magnitude of the decrease in productivity is likely to be related to the growth dynamics of co-editing networks which can be interpreted as a first-order approximation of coordination requirements.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+									
+									
+										<td>
+											<a class="bold" href="http://dx.doi.org/10.1007/s10664-015-9406-4" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-464-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-464-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/paper_bQeEC8G.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-464-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@article{Scholtes2016,
+    author = &quot;Scholtes, Ingo and Mavrodiev, Pavlin and Schweitzer, Frank&quot;,
+    publisher = &quot;Springer&quot;,
+    doi = &quot;10.1007/s10664-015-9406-4&quot;,
+    title = &quot;From Aristotle to Ringelmann: A large-scale analysis of team productivity and coordination in Open Source Software projects&quot;,
+    journal = &quot;Empirical Software Engineering&quot;,
+    abstract = &quot;Complex software development projects rely on the contribution of teams of developers, who are required to collaborate and coordinate their efforts. The productivity of such development teams, i.e., how their size is related to the produced output, is an important consideration for project and schedule management as well as for cost estimation. The majority of studies in empirical software engineering suggest that - due to coordination overhead - teams of collaborating developers become less productive as they grow in size. This phenomenon is commonly paraphrased as Brooks’ law of software project management, which states that “adding manpower to a software project makes it later”. Outside software engineering, the non - additive scaling of productivity in teams is often referred to as the Ringelmann effect, which is studied extensively in social psychology and organizational theory. Conversely, a recent study suggested that in Open Source Software (OSS) projects, the productivity of developers increases as the team grows in size. Attributing it to collective synergetic effects, this surprising finding was linked to the Aristotelian quote that “the whole is more than the sum of its parts”. Using a data set of 58 OSS projects with more than 580,000 commits contributed by more than 30,000 developers, in this article we provide a large - scale analysis of the relation between size and productivity of software development teams. Our findings confirm the negative relation between team size and productivity previously suggested by empirical software engineering research, thus providing quantitative evidence for the presence of a strong Ringelmann effect. Using fine - grained data on the association between developers and source code files, we investigate possible explanations for the observed relations between team size and productivity. In particular, we take a network perspective on developer - code associations in software development teams and show that the magnitude of the decrease in productivity is likely to be related to the growth dynamics of co - editing networks which can be interpreted as a first - order approximation of coordination requirements.&quot;,
+    issn = &quot;1382-3256&quot;,
+    number = &quot;2&quot;,
+    month = &quot;April&quot;,
+    volume = &quot;21&quot;,
+    url = &quot;http://dx.doi.org/10.1007/s10664-015-9406-4&quot;,
+    year = &quot;2016&quot;,
+    keywords = &quot;Software engineering; Repository mining; Productivity factors; Social aspects of software engineering; Open source software; Coordination&quot;,
+    pages = &quot;642-683&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-464-more-').click( function(){
+					
+					//$('.pub-464-').css("padding-bottom","40px");
+				    $('#pub-464-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-464-less-').show();
+					
+					$('div.pub-464-thumbnail- img.smaller' ).hide()
+					$('div.pub-464-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-464-less-').click( function(){
+					
+					//$('.pub-464-').css("padding-bottom","20px");
+
+				    $('#pub-464-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-464-more-').show();
+				    
+				    $('div.pub-464-thumbnail- img.larger' ).hide()
+				    $('div.pub-464-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-464-bibtex').hide();
+					$('a#pub-464-show-bibtex').removeClass("red");
+					$('a#pub-464-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-464-show-bibtex').click( function(){
+					
+				    $('#pub-464-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-464-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/paper_bQeEC8G.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-464-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/plotCoordinationNetworksZf2-24_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-434-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									How do OSS projects change in number and size? A large-scale analysis to test a model of project growth
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2014]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Nanumyan, Vahan</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Tessone, Claudio Juan</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Xia, Xi</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> ACS - Advances in Complex Systems,
+										
+											pages: 1550008,
+										
+										
+											volume: 17,
+										
+										
+											number: 07n08
+										
+									</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-434-more-">more»</a> <a class="bold" style="display:none;" id="pub-434-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-434-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://www.worldscientific.com/doi/abs/10.1142/S0219525915500083" target="_blank">10.1142/S0219525915500083</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>Established open source software (OSS) projects can grow in size if new developers join, but also the number of OSS projects can grow if developers choose to found new projects. We discuss to what extent an established model for firm growth can be applied to the dynamics of OSS projects. Our analysis is based on a large-scale data set from SourceForge (SF) consisting of monthly data for 10 years, for up to 360,000 OSS projects and up to 340,000 developers. Over this time period, we find an exponential growth both in the number of projects and developers, with a remarkable increase of single-developer projects after 2009. We analyze the monthly entry and exit rates for both projects and developers, the growth rate of established projects and the monthly project size distribution. To derive a prediction for the latter, we use modeling assumptions of how newly entering developers choose to either found a new project or to join existing ones. Our model applies only to collaborative projects that are deemed to grow in size by attracting new developers. We verify, by a thorough statistical analysis, that the Yule–Simon distribution is a valid candidate for the size distribution of collaborative projects except for certain time periods where the modeling assumptions no longer hold. We detect and empirically test the reason for this limitation, i.e., the fact that an increasing number of established developers found additional new projects after 2009.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+										<td>
+											<a class="bold" href="http://arxiv.org/abs/1506.06924 " target="_blank">arxiv</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a class="bold" href="http://www.worldscientific.com/doi/abs/10.1142/S0219525915500083" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-434-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-434-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/Schweitzer2014.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-434-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@article{Nanumyan2014,
+    author = &quot;Schweitzer, Frank and Nanumyan, Vahan and Tessone, Claudio Juan and Xia, Xi&quot;,
+    doi = &quot;10.1142/S0219525915500083&quot;,
+    title = &quot;How do OSS projects change in number and size? A large-scale analysis to test a model of project growth&quot;,
+    journal = &quot;ACS - Advances in Complex Systems&quot;,
+    abstract = &quot;Established open source software (OSS) projects can grow in size if new developers join, but also the number of OSS projects can grow if developers choose to found new projects. We discuss to what extent an established model for firm growth can be applied to the dynamics of OSS projects. Our analysis is based on a large - scale data set from SourceForge (SF) consisting of monthly data for 10 years, for up to 360,000 OSS projects and up to 340,000 developers. Over this time period, we find an exponential growth both in the number of projects and developers, with a remarkable increase of single - developer projects after 2009. We analyze the monthly entry and exit rates for both projects and developers, the growth rate of established projects and the monthly project size distribution. To derive a prediction for the latter, we use modeling assumptions of how newly entering developers choose to either found a new project or to join existing ones. Our model applies only to collaborative projects that are deemed to grow in size by attracting new developers. We verify, by a thorough statistical analysis, that the Yule–Simon distribution is a valid candidate for the size distribution of collaborative projects except for certain time periods where the modeling assumptions no longer hold. We detect and empirically test the reason for this limitation, i.e., the fact that an increasing number of established developers found additional new projects after 2009.&quot;,
+    number = &quot;07n08&quot;,
+    volume = &quot;17&quot;,
+    url = &quot;http://www.worldscientific.com/doi/abs/10.1142/S0219525915500083&quot;,
+    eprint = &quot;http://www.worldscientific.com/doi/pdf/10.1142/S0219525915500083&quot;,
+    year = &quot;2014&quot;,
+    arxivid = &quot;1506.06924 &quot;,
+    pages = &quot;1550008&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-434-more-').click( function(){
+					
+					//$('.pub-434-').css("padding-bottom","40px");
+				    $('#pub-434-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-434-less-').show();
+					
+					$('div.pub-434-thumbnail- img.smaller' ).hide()
+					$('div.pub-434-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-434-less-').click( function(){
+					
+					//$('.pub-434-').css("padding-bottom","20px");
+
+				    $('#pub-434-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-434-more-').show();
+				    
+				    $('div.pub-434-thumbnail- img.larger' ).hide()
+				    $('div.pub-434-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-434-bibtex').hide();
+					$('a#pub-434-show-bibtex').removeClass("red");
+					$('a#pub-434-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-434-show-bibtex').click( function(){
+					
+				    $('#pub-434-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-434-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/Schweitzer2014.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-434-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/Schweitzer2015_thumb_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-437-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									Communication In Innovation Communities: An Analysis Of 100 Open Source Software Projects
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2014]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Geipel, Markus Michael</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Press, Kerstin</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> ACS - Advances in Complex Systems,
+										
+											pages: 1550006,
+										
+										
+											volume: 17,
+										
+										
+											number: 07n08
+										
+									</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-437-more-">more»</a> <a class="bold" style="display:none;" id="pub-437-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-437-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://www.worldscientific.com/doi/abs/10.1142/S021952591550006X" target="_blank">10.1142/S021952591550006X</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>We develop a model of innovation communities which allows us to address in a systematic way the influence of users and developers as well as communication between and within these groups. Based on this model, we derive a formal approach to quantify communication flows, community activity and community turnover. These measures are calculated using the data of 100 open source software projects. Our empirical analysis shows that: (i) Users play indeed a predominant role in communication, which points towards the vivid role of an active user community; (ii) communication is highly concentrated, which points towards the importance of active individuals and (iii) community turnover exhibits only little correlation with community segregation, which may allow to benefit from high turnover rates while keeping negative effects small. We argue that insight from this extensive analysis not only complements existing case studies, it also provides a reference frame to put these singular results into perspective when aiming at generalizations.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+									
+									
+										<td>
+											<a class="bold" href="http://www.worldscientific.com/doi/abs/10.1142/S021952591550006X" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-437-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-437-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/ACS-user-S021952591550006X.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-437-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@article{Geipel2014,
+    author = &quot;Geipel, Markus Michael and Press, Kerstin and Schweitzer, Frank&quot;,
+    doi = &quot;10.1142/S021952591550006X&quot;,
+    title = &quot;Communication In Innovation Communities: An Analysis Of 100 Open Source Software Projects&quot;,
+    journal = &quot;ACS - Advances in Complex Systems&quot;,
+    abstract = &quot;We develop a model of innovation communities which allows us to address in a systematic way the influence of users and developers as well as communication between and within these groups. Based on this model, we derive a formal approach to quantify communication flows, community activity and community turnover. These measures are calculated using the data of 100 open source software projects. Our empirical analysis shows that: (i) Users play indeed a predominant role in communication, which points towards the vivid role of an active user community; (ii) communication is highly concentrated, which points towards the importance of active individuals and (iii) community turnover exhibits only little correlation with community segregation, which may allow to benefit from high turnover rates while keeping negative effects small. We argue that insight from this extensive analysis not only complements existing case studies, it also provides a reference frame to put these singular results into perspective when aiming at generalizations.&quot;,
+    number = &quot;07n08&quot;,
+    volume = &quot;17&quot;,
+    url = &quot;http://www.worldscientific.com/doi/abs/10.1142/S021952591550006X&quot;,
+    eprint = &quot;http://www.worldscientific.com/doi/pdf/10.1142/S021952591550006X&quot;,
+    year = &quot;2014&quot;,
+    pages = &quot;1550006&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-437-more-').click( function(){
+					
+					//$('.pub-437-').css("padding-bottom","40px");
+				    $('#pub-437-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-437-less-').show();
+					
+					$('div.pub-437-thumbnail- img.smaller' ).hide()
+					$('div.pub-437-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-437-less-').click( function(){
+					
+					//$('.pub-437-').css("padding-bottom","20px");
+
+				    $('#pub-437-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-437-more-').show();
+				    
+				    $('div.pub-437-thumbnail- img.larger' ).hide()
+				    $('div.pub-437-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-437-bibtex').hide();
+					$('a#pub-437-show-bibtex').removeClass("red");
+					$('a#pub-437-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-437-show-bibtex').click( function(){
+					
+				    $('#pub-437-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-437-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/ACS-user-S021952591550006X.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-437-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/geipel_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-370-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									The Role of Emotions in Contributors Activity: A Case Study of the Gentoo Community
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2013]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Garcia, David</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Zanetti, Marcelo Serrano</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> In Proceedings of the International Conference on Social Computing and Its Applications</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-370-more-">more»</a> <a class="bold" style="display:none;" id="pub-370-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-370-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6686063" target="_blank">10.1109/CGC.2013.71</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>We analyse the relation between the emotions and the activity of contributors in the Open Source Software project Gentoo. Our case study builds on extensive data sets from the project&#39;s bug tracking platform Bugzilla, to quantify the activity of contributors, and its mail archives, to quantify the emotions of contributors by means of sentiment analysis. The Gentoo project is known for a considerable drop in development performance after the sudden retirement of a central contributor. We analyse how this event correlates with the negative emotions, both in bilateral email discussions with the central contributor, and at the level of the whole community of contributors. We then extend our study to consider the activity patters on Gentoo contributors in general. We find that contributors are more likely to become inactive when they express strong positive or negative emotions in the bug tracker, or when they deviate from the expected value of emotions in the mailing list. We use these insights to develop a Bayesian classifier that detects the risk of contributors leaving the project. Our analysis opens new perspectives for measuring online contributor motivation by means of sentiment analysis and for real-time predictions of contributor turnover in Open Source Software projects.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+										<td>
+											<a class="bold" href="http://arxiv.org/abs/1306.3612" target="_blank">arxiv</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a class="bold" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6686063" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-370-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-370-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/06686063.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-370-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@inproceedings{Schweitzer2013,
+    author = &quot;Garcia, David and Zanetti, Marcelo Serrano and Schweitzer, Frank&quot;,
+    conference = &quot;In Proceedings of the International Conference on Social Computing and Its Applications&quot;,
+    doi = &quot;10.1109/CGC.2013.71&quot;,
+    title = &quot;The Role of Emotions in Contributors Activity: A Case Study of the Gentoo Community&quot;,
+    url = &quot;http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&amp;arnumber=6686063&quot;,
+    abstract = &quot;We analyse the relation between the emotions and the activity of contributors in the Open Source Software project Gentoo. Our case study builds on extensive data sets from the project&#39;s bug tracking platform Bugzilla, to quantify the activity of contributors, and its mail archives, to quantify the emotions of contributors by means of sentiment analysis. The Gentoo project is known for a considerable drop in development performance after the sudden retirement of a central contributor. We analyse how this event correlates with the negative emotions, both in bilateral email discussions with the central contributor, and at the level of the whole community of contributors. We then extend our study to consider the activity patters on Gentoo contributors in general. We find that contributors are more likely to become inactive when they express strong positive or negative emotions in the bug tracker, or when they deviate from the expected value of emotions in the mailing list. We use these insights to develop a Bayesian classifier that detects the risk of contributors leaving the project. Our analysis opens new perspectives for measuring online contributor motivation by means of sentiment analysis and for real-time predictions of contributor turnover in Open Source Software projects.&quot;,
+    year = &quot;2013&quot;,
+    arxivid = &quot;1306.3612&quot;,
+    pages = &quot;410-417&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-370-more-').click( function(){
+					
+					//$('.pub-370-').css("padding-bottom","40px");
+				    $('#pub-370-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-370-less-').show();
+					
+					$('div.pub-370-thumbnail- img.smaller' ).hide()
+					$('div.pub-370-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-370-less-').click( function(){
+					
+					//$('.pub-370-').css("padding-bottom","20px");
+
+				    $('#pub-370-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-370-more-').show();
+				    
+				    $('div.pub-370-thumbnail- img.larger' ).hide()
+				    $('div.pub-370-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-370-bibtex').hide();
+					$('a#pub-370-show-bibtex').removeClass("red");
+					$('a#pub-370-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-370-show-bibtex').click( function(){
+					
+				    $('#pub-370-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-370-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/06686063.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-370-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/tri4_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-339-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									The rise and fall of a central contributor: Dynamics of social organization and performance in the Gentoo community
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2013]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Zanetti, Marcelo Serrano</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Scholtes, Ingo</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Tessone, Claudio Juan</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> CHASE/ICSE &#39;13 Proceedings of the 6th International Workshop on Cooperative and Human Aspects of Software Engineering</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-339-more-">more»</a> <a class="bold" style="display:none;" id="pub-339-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-339-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://dx.doi.org/10.1109/CHASE.2013.6614731" target="_blank">10.1109/CHASE.2013.6614731</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>Social organization and division of labor crucially influence the performance of collaborative software engineering efforts. In this paper, we provide a quantitative analysis of the relation between social organization and performance in Gentoo, an Open Source community developing a Linux distribution. We study the structure and dynamics of collaborations as recorded in the project&#39;s bug tracking system over a period of ten years. We identify a period of increasing centralization after which most interactions in the community were mediated by a single central contributor. In this period of maximum centralization, the central contributor unexpectedly left the project, thus posing a significant challenge for the community. We quantify how the rise, the activity as well as the subsequent sudden dropout of this central contributor affected both the social organization and the bug handling performance of the Gentoo community. We analyze social organization from the perspective of network theory and augment our quantitative findings by interviews with prominent members of the Gentoo community which shared their personal insights.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+										<td>
+											<a class="bold" href="http://arxiv.org/abs/1302.7191" target="_blank">arxiv</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a class="bold" href="http://dx.doi.org/10.1109/CHASE.2013.6614731" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-339-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-339-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/paper.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-339-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@inproceedings{Scholtes2013,
+    author = &quot;Zanetti, Marcelo Serrano and Scholtes, Ingo and Tessone, Claudio Juan and Schweitzer, Frank&quot;,
+    conference = &quot;In Proceedings of the International Workshop on Cooperative and Human Aspects of Software Engineering&quot;,
+    doi = &quot;10.1109/CHASE.2013.6614731&quot;,
+    title = &quot;The rise and fall of a central contributor: Dynamics of social organization and performance in the Gentoo community&quot;,
+    url = &quot;http://dx.doi.org/10.1109/CHASE.2013.6614731&quot;,
+    abstract = &quot;Social organization and division of labor crucially influence the performance of collaborative software engineering efforts. In this paper, we provide a quantitative analysis of the relation between social organization and performance in Gentoo, an Open Source community developing a Linux distribution. We study the structure and dynamics of collaborations as recorded in the project&#39;s bug tracking system over a period of ten years. We identify a period of increasing centralization after which most interactions in the community were mediated by a single central contributor. In this period of maximum centralization, the central contributor unexpectedly left the project, thus posing a significant challenge for the community. We quantify how the rise, the activity as well as the subsequent sudden dropout of this central contributor affected both the social organization and the bug handling performance of the Gentoo community. We analyze social organization from the perspective of network theory and augment our quantitative findings by interviews with prominent members of the Gentoo community which shared their personal insights.&quot;,
+    year = &quot;2013&quot;,
+    arxivid = &quot;1302.7191&quot;,
+    booktitle = &quot;CHASE/ICSE &#39;13 Proceedings of the 6th International Workshop on Cooperative and Human Aspects of Software Engineering&quot;,
+    pages = &quot;49-56&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-339-more-').click( function(){
+					
+					//$('.pub-339-').css("padding-bottom","40px");
+				    $('#pub-339-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-339-less-').show();
+					
+					$('div.pub-339-thumbnail- img.smaller' ).hide()
+					$('div.pub-339-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-339-less-').click( function(){
+					
+					//$('.pub-339-').css("padding-bottom","20px");
+
+				    $('#pub-339-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-339-more-').show();
+				    
+				    $('div.pub-339-thumbnail- img.larger' ).hide()
+				    $('div.pub-339-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-339-bibtex').hide();
+					$('a#pub-339-show-bibtex').removeClass("red");
+					$('a#pub-339-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-339-show-bibtex').click( function(){
+					
+				    $('#pub-339-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-339-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/paper.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-339-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/gentoo_lcc_2006-07-01_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-323-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									Categorizing bugs with social networks: A case study on four open source software communities
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2013]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Zanetti, Marcelo Serrano</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Scholtes, Ingo</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Tessone, Claudio Juan</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> ICSE &#39;13 Proceedings of the 35th International Conference on Software Engineering</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-323-more-">more»</a> <a class="bold" style="display:none;" id="pub-323-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-323-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://dl.acm.org/citation.cfm?id=2486788.2486930&amp;coll=DL&amp;dl=ACM&amp;CFID=220466194&amp;CFTOKEN=89604713" target="_blank">10.1109/ICSE.2013.6606653</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>Efﬁcient bug triaging procedures are an important precondition for successful collaborative software engineering projects. Triaging bugs can become a laborious task particularly in open source software (OSS) projects with a large base of comparably inexperienced part-time contributors. In this paper, we propose an efﬁcient and practical method to identify valid bug reports which a) refer to an actual software bug, b) are not duplicates and c) contain enough information to be processed right away. Our classiﬁcation is based on nine measures to quantify the social embeddedness of bug reporters in the collaboration network. We demonstrate its applicability in a case study, using a comprehensive data set of more than 700, 000 bug reports obtained from the BUGZILLA installation of four major OSS communities, for a period of more than ten years. For those projects that exhibit the lowest fraction of valid bug reports, we ﬁnd that the bug reporters’ position in the collaboration network is a strong indicator for the quality of bug reports. Based on this ﬁnding, we develop an automated classiﬁcation scheme that can easily be integrated into bug tracking platforms and analyze its performance in the considered OSS communities. A support vector machine (SVM) to identify valid bug reports based on the nine measures yields a precision of up to 90.3% with an associated recall of 38.9%. With this, we signiﬁcantly improve the results obtained in previous case studies for an automated early identiﬁcation of bugs that are eventually ﬁxed. Furthermore, our study highlights the potential of using quantitative measures of social organization in collaborative software engineering. It also opens a broad perspective for the integration of social network analysis in the design of support infrastructures.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+										<td>
+											<a class="bold" href="http://arxiv.org/abs/1302.6764" target="_blank">arxiv</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a class="bold" href="http://dl.acm.org/citation.cfm?id=2486788.2486930&amp;coll=DL&amp;dl=ACM&amp;CFID=220466194&amp;CFTOKEN=89604713" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-323-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-323-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/2486788.2486930.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-323-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@inproceedings{Scholtes2013,
+    author = &quot;Zanetti, Marcelo Serrano and Scholtes, Ingo and Tessone, Claudio Juan and Schweitzer, Frank&quot;,
+    conference = &quot;In Proceedings of the International Conference on Software Engineering&quot;,
+    doi = &quot;10.1109/ICSE.2013.6606653&quot;,
+    isbn = &quot;978-1-4673-3076-3&quot;,
+    title = &quot;Categorizing bugs with social networks: A case study on four open source software communities&quot;,
+    url = &quot;http://dl.acm.org/citation.cfm?id=2486788.2486930\&amp;coll=DL\&amp;dl=ACM\&amp;CFID=220466194\&amp;CFTOKEN=89604713&quot;,
+    abstract = &quot;Efﬁcient bug triaging procedures are an important precondition for successful collaborative software engineering projects. Triaging bugs can become a laborious task particularly in open source software (OSS) projects with a large base of comparably inexperienced part - time contributors. In this paper, we propose an efﬁcient and practical method to identify valid bug reports which a) refer to an actual software bug, b) are not duplicates and c) contain enough information to be processed right away. Our classiﬁcation is based on nine measures to quantify the social embeddedness of bug reporters in the collaboration network. We demonstrate its applicability in a case study, using a comprehensive data set of more than 700, 000 bug reports obtained from the BUGZILLA installation of four major OSS communities, for a period of more than ten years. For those projects that exhibit the lowest fraction of valid bug reports, we ﬁnd that the bug reporters’ position in the collaboration network is a strong indicator for the quality of bug reports. Based on this ﬁnding, we develop an automated classiﬁcation scheme that can easily be integrated into bug tracking platforms and analyze its performance in the considered OSS communities. A support vector machine (SVM) to identify valid bug reports based on the nine measures yields a precision of up to 90.3\% with an associated recall of 38.9\%. With this, we signiﬁcantly improve the results obtained in previous case studies for an automated early identiﬁcation of bugs that are eventually ﬁxed. Furthermore, our study highlights the potential of using quantitative measures of social organization in collaborative software engineering. It also opens a broad perspective for the integration of social network analysis in the design of support infrastructures.&quot;,
+    year = &quot;2013&quot;,
+    arxivid = &quot;1302.6764&quot;,
+    booktitle = &quot;ICSE &#39;13 Proceedings of the 35th International Conference on Software Engineering&quot;,
+    pages = &quot;1032-1041&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-323-more-').click( function(){
+					
+					//$('.pub-323-').css("padding-bottom","40px");
+				    $('#pub-323-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-323-less-').show();
+					
+					$('div.pub-323-thumbnail- img.smaller' ).hide()
+					$('div.pub-323-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-323-less-').click( function(){
+					
+					//$('.pub-323-').css("padding-bottom","20px");
+
+				    $('#pub-323-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-323-more-').show();
+				    
+				    $('div.pub-323-thumbnail- img.larger' ).hide()
+				    $('div.pub-323-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-323-bibtex').hide();
+					$('a#pub-323-show-bibtex').removeClass("red");
+					$('a#pub-323-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-323-show-bibtex').click( function(){
+					
+				    $('#pub-323-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-323-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/2486788.2486930.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-323-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/file_4_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-271-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									The co-evolution of socio-technical structures in sustainable software development: Lessons from the open source software communities
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2012]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Zanetti, Marcelo Serrano</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> ICSE &#39;12 Proceedings of the 34th International Conference on Software Engineering</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-271-more-">more»</a> <a class="bold" style="display:none;" id="pub-271-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-271-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://dl.acm.org/citation.cfm?id=2337223.2337491&amp;coll=DL&amp;dl=ACM&amp;CFID=181214830&amp;CFTOKEN=36618462" target="_blank">10.1109/ICSE.2012.6227030</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>Software development depends on many factors, including technical, human and social aspects. Due to the complexity of this dependence, a unifying framework must be defined and for this purpose we adopt the complex networks methodology. We use a data-driven approach based on a large collection of open source software projects extracted from online project development platforms. The preliminary results presented in this article reveal that the network perspective yields key insights into the sustainability of software development.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+									
+									
+										<td>
+											<a class="bold" href="http://dl.acm.org/citation.cfm?id=2337223.2337491&amp;coll=DL&amp;dl=ACM&amp;CFID=181214830&amp;CFTOKEN=36618462" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-271-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-271-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/2337223.2337491.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-271-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@inproceedings{Zanetti2012,
+    author = &quot;Zanetti, Marcelo Serrano&quot;,
+    conference = &quot;ICSE &#39;12 Proceedings of the 34th International Conference on Software Engineering&quot;,
+    publisher = &quot;IEEE&quot;,
+    doi = &quot;10.1109/ICSE.2012.6227030&quot;,
+    isbn = &quot;978-1-4673-1067-3&quot;,
+    title = &quot;The co-evolution of socio-technical structures in sustainable software development: Lessons from the open source software communities&quot;,
+    url = &quot;http://dl.acm.org/citation.cfm?id=2337223.2337491\&amp;coll=DL\&amp;dl=ACM\&amp;CFID=181214830\&amp;CFTOKEN=36618462&quot;,
+    abstract = &quot;Software development depends on many factors, including technical, human and social aspects. Due to the complexity of this dependence, a unifying framework must be defined and for this purpose we adopt the complex networks methodology. We use a data-driven approach based on a large collection of open source software projects extracted from online project development platforms. The preliminary results presented in this article reveal that the network perspective yields key insights into the sustainability of software development.&quot;,
+    mendeleytags = &quot;SG-Publication, PRJ\_OSS, MZ\_SG&quot;,
+    year = &quot;2012&quot;,
+    pages = &quot;1587-1590&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-271-more-').click( function(){
+					
+					//$('.pub-271-').css("padding-bottom","40px");
+				    $('#pub-271-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-271-less-').show();
+					
+					$('div.pub-271-thumbnail- img.smaller' ).hide()
+					$('div.pub-271-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-271-less-').click( function(){
+					
+					//$('.pub-271-').css("padding-bottom","20px");
+
+				    $('#pub-271-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-271-more-').show();
+				    
+				    $('div.pub-271-thumbnail- img.larger' ).hide()
+				    $('div.pub-271-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-271-bibtex').hide();
+					$('a#pub-271-show-bibtex').removeClass("red");
+					$('a#pub-271-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-271-show-bibtex').click( function(){
+					
+				    $('#pub-271-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-271-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/2337223.2337491.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-271-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/thumb_site6_1_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+						
+					
+			
+					<div class="publication pub-258-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									A quantitative study of social organisation in open source software communities
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2012]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal" style="color:#08C;"> Zanetti, Marcelo Serrano</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Sarigol, Emre</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Scholtes, Ingo</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Tessone, Claudio Juan</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Schweitzer, Frank</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> In Proceedings of the 2012 Imperial College Computing Student Workshop</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-258-more-">more»</a> <a class="bold" style="display:none;" id="pub-258-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-258-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://drops.dagstuhl.de/opus/volltexte/2012/3774/" target="_blank">10.4230/OASIcs.ICCSW.2012.116</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>The success of open source projects crucially depends on the voluntary contributions of a suf-
+ﬁciently large community of users. Apart from the mere size of the community, interesting
+questions arises when looking at the evolution of structural features of collaborations between
+community members. In this article, we discuss several network analytic proxies that can be
+used to quantify diﬀerent aspects of the social organisation in social collaboration networks. We
+particularly focus on measures that can be related to the cohesiveness of the communities, the
+distribution of responsibilities and the resilience against turnover of community members. We
+present a comparative analysis on a large-scale data set that covers the full history of collabor-
+ations between users of 14 major open source software communities. Our analysis covers both
+aggregate and time-evolving measures and highlights diﬀerences in the social organisation across
+communities. We argue that our results are a promising ﬁrst step towards the deﬁnition of
+suitable, potentially multi-dimensional, resilience and risk indicators for open source software
+communities.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+										<td>
+											<a class="bold" href="http://arxiv.org/abs/arXiv:1208.4289" target="_blank">arxiv</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a class="bold" href="http://drops.dagstuhl.de/opus/volltexte/2012/3774/" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-258-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-258-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/19_zaP2Wqc.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-258-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@inproceedings{Scholtes2012,
+    author = &quot;Zanetti, Marcelo Serrano and Sarigol, Emre and Scholtes, Ingo and Tessone, Claudio Juan and Schweitzer, Frank&quot;,
+    publisher = &quot;Schloss Dagstuhl&quot;,
+    doi = &quot;10.4230/OASIcs.ICCSW.2012.116&quot;,
+    isbn = &quot;978-3-939897-48-4&quot;,
+    title = &quot;A quantitative study of social organisation in open source software communities&quot;,
+    url = &quot;http://drops.dagstuhl.de/opus/volltexte/2012/3774/&quot;,
+    abstract = &quot;The success of open source projects crucially depends on the voluntary contributions of a suf - ﬁciently large community of users. Apart from the mere size of the community, interestingquestions arises when looking at the evolution of structural features of collaborations betweencommunity members. In this article, we discuss several network analytic proxies that can beused to quantify diﬀerent aspects of the social organisation in social collaboration networks. Weparticularly focus on measures that can be related to the cohesiveness of the communities, thedistribution of responsibilities and the resilience against turnover of community members. Wepresent a comparative analysis on a large - scale data set that covers the full history of collabor - ations between users of 14 major open source software communities. Our analysis covers bothaggregate and time - evolving measures and highlights diﬀerences in the social organisation acrosscommunities. We argue that our results are a promising ﬁrst step towards the deﬁnition ofsuitable, potentially multi - dimensional, resilience and risk indicators for open source softwarecommunities.&quot;,
+    issn = &quot;2190-6807&quot;,
+    arxivid = &quot;arXiv:1208.4289&quot;,
+    mendeleytags = &quot;SG-Publication, PRJ\_OSS, MZ\_SG&quot;,
+    volume = &quot;28&quot;,
+    year = &quot;2012&quot;,
+    keywords = &quot;open source software, mining software repositories, social networks&quot;,
+    booktitle = &quot;In Proceedings of the 2012 Imperial College Computing Student Workshop&quot;,
+    pages = &quot;116--122&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-258-more-').click( function(){
+					
+					//$('.pub-258-').css("padding-bottom","40px");
+				    $('#pub-258-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-258-less-').show();
+					
+					$('div.pub-258-thumbnail- img.smaller' ).hide()
+					$('div.pub-258-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-258-less-').click( function(){
+					
+					//$('.pub-258-').css("padding-bottom","20px");
+
+				    $('#pub-258-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-258-more-').show();
+				    
+				    $('div.pub-258-thumbnail- img.larger' ).hide()
+				    $('div.pub-258-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-258-bibtex').hide();
+					$('a#pub-258-show-bibtex').removeClass("red");
+					$('a#pub-258-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-258-show-bibtex').click( function(){
+					
+				    $('#pub-258-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-258-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/19_zaP2Wqc.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+                                        
+                                        $('div.pub-258-thumbnail-').click(function() {
+                                        
+                                        $.fancybox({
+                                                'width'                         : 600,
+                                                'height'                        : 600,
+                                            'autoScale'         : false,
+                                            'transitionIn'              : 'none',
+                                                'transitionOut'         : 'none',
+                                                'type'                          : 'iframe',
+                                            'href'              : '/media/_thumbs/publication_images/thumb_site5_1_thumb_600x600.png'
+                                
+                                        });
+                                       
+                                        });
+                                        
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+			<div class="publication-list" style="margin:0px;clear:both;" >
+					
+				
+			
+					
+			
+					<div class="publication pub-449-" id="pub-" style=";">
+			
+						<table cols="5">
+					
+						<tr>
+					
+							<td colspan="4">
+								<h4 style="margin:0px 0px; line-height:1.5em; padding:0px;margin-bottom:3px;float:left;width:630px;">
+									A Complex Networks Perspective On Collaborative Software Engineering
+								</h4>
+							</td>
+							<td  colspan="1">							
+								
+									<span style="float:right;font-size: 95%;color:black;font-weight:bold;">[2015]</span>	
+										
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div style="font-size:95%;line-height:1.5em;clear:both;;width:770px;">
+									<!-- difference between related pubs: width:630px, for author in res.authors -->
+									 
+										
+											<b class="normal"> Cataldo, Marcelo</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal" style="color:#08C;"> Scholtes, Ingo</b><b class="normal">;</b>
+										
+										
+									 
+										
+											<b class="normal"> Valetto, Giuseppe</b><b class="normal"></b>
+										
+										
+									 
+									
+								</div>
+							</td>
+						<tr>
+					
+							<td colspan="4">
+								
+									<h4 style="margin:0px 0px; line-height:1.5em; font-size:95%; padding:0px;margin-bottom:3px;float:left;max-width:90%;"> ACS - Advances in Complex Systems,
+										
+											pages: 1430001,
+										
+										
+											volume: 17,
+										
+										
+											number: 07n08
+										
+									</h4>
+								
+							</td>
+							
+							<td colspan="1">
+								<small style="float:right;">
+									<a class="bold" id="pub-449-more-">more»</a> <a class="bold" style="display:none;" id="pub-449-less-"> «less </a>
+								</small>	
+							</td>		
+						</tr>
+					
+						</table>
+
+							
+						<div class="abstract" id="pub-449-abstract-" style='display:none;'>
+				
+							<table>
+													
+								<tr>
+									
+									<td>
+										<p><b>DOI:</b></p>
+									</td>
+									<td>
+										
+											<a class="bold" href="http://www.worldscientific.com/doi/abs/10.1142/S0219525914300011" target="_blank">10.1142/S0219525914300011</a>
+										
+									
+									</td>
+									
+								</tr>
+							
+							</table>
+							
+							<table>
+								<tr>
+									
+										<p class="bold">Abstract</p>
+										<p>Large collaborative software engineering projects are interesting examples for evolving complex systems. The complexity of these systems unfolds both in evolving software structures, as well as in the social dynamics and organization of development teams. Due to the adoption of Open Source practices and the increasing use of online support infrastructures, large-scale data sets covering both the social and technical dimension of collaborative software engineering processes are increasingly becoming available. In the analysis of these data, a growing number of studies employ a network perspective, using methods and abstractions from network science to generate insights about software engineering processes. Featuring a collection of inspiring works in this area, with this topical issue, we intend to give an overview of state-of-the-art research. We hope that this collection of articles will stimulate downstream applications of network-based data mining techniques in empirical software engineering.</p>
+									
+								</tr>
+							</table>
+							
+							
+		
+							
+							<table  style="float:right;height:30px;margin-bottom:20px;">
+								<tr>
+									
+									
+									
+									
+										<td>
+											<a class="bold" href="http://www.worldscientific.com/doi/abs/10.1142/S0219525914300011" target="_blank">link</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-449-show-bibtex" class="bold">bibtex</a>
+										</td>
+									
+									
+									
+										<td>
+											|<a id="pub-449-link" class="bold">view</a>
+										</td>
+										<td>
+											|<a href="../../media/publication_files/paper_ueESX1p.pdf" class="bold">download</a> 
+										</td>
+									
+
+								</tr>
+					
+							</table>
+							
+							<div id="pub-449-bibtex" style="display:none;font-size: 95%;">
+								<br/>
+								<textarea wrap="soft" style="width:98%;max-width:98%;min-height:400px;background-color:#eee;">@article{Cataldo2015,
+    author = &quot;Cataldo, Marcelo and Scholtes, Ingo and Valetto, Giuseppe&quot;,
+    doi = &quot;10.1142/S0219525914300011&quot;,
+    title = &quot;A Complex Networks Perspective On Collaborative Software Engineering&quot;,
+    journal = &quot;ACS - Advances in Complex Systems&quot;,
+    abstract = &quot;Large collaborative software engineering projects are interesting examples for evolving complex systems. The complexity of these systems unfolds both in evolving software structures, as well as in the social dynamics and organization of development teams. Due to the adoption of Open Source practices and the increasing use of online support infrastructures, large-scale data sets covering both the social and technical dimension of collaborative software engineering processes are increasingly becoming available. In the analysis of these data, a growing number of studies employ a network perspective, using methods and abstractions from network science to generate insights about software engineering processes. Featuring a collection of inspiring works in this area, with this topical issue, we intend to give an overview of state-of-the-art research. We hope that this collection of articles will stimulate downstream applications of network-based data mining techniques in empirical software engineering.&quot;,
+    number = &quot;07n08&quot;,
+    volume = &quot;17&quot;,
+    url = &quot;http://www.worldscientific.com/doi/abs/10.1142/S0219525914300011&quot;,
+    eprint = &quot;http://www.worldscientific.com/doi/pdf/10.1142/S0219525914300011&quot;,
+    year = &quot;2015&quot;,
+    pages = &quot;1430001&quot;
+}
+</textarea>
+							</div>
+							
+							
+							
+						</div>	
+						
+				
+					
+				
+				</div>
+		
+				<script>
+					
+	
+					$('#pub-449-more-').click( function(){
+					
+					//$('.pub-449-').css("padding-bottom","40px");
+				    $('#pub-449-abstract-').slideDown();
+				    $(this).hide();
+					$('#pub-449-less-').show();
+					
+					$('div.pub-449-thumbnail- img.smaller' ).hide()
+					$('div.pub-449-thumbnail- img.larger' ).slideDown(500)
+					
+					
+				})
+				
+				$('#pub-449-less-').click( function(){
+					
+					//$('.pub-449-').css("padding-bottom","20px");
+
+				    $('#pub-449-abstract-').slideUp();
+				    $(this).hide();
+				    $('#pub-449-more-').show();
+				    
+				    $('div.pub-449-thumbnail- img.larger' ).hide()
+				    $('div.pub-449-thumbnail- img.smaller' ).show(200)
+					
+					$('#pub-449-bibtex').hide();
+					$('a#pub-449-show-bibtex').removeClass("red");
+					$('a#pub-449-show-bibtex').addClass("bold");
+				})
+				
+						
+				$('a#pub-449-show-bibtex').click( function(){
+					
+				    $('#pub-449-bibtex').slideDown();
+					
+					$(this).removeClass("bold");
+					$(this).addClass("red");
+						
+				})
+				
+
+	
+	
+				
+					$('#pub-449-link').click(function() {
+				    	$.fancybox({
+				    		'width'				: 760,
+				    		'height'			: 800,
+				            'autoScale'     	: false,
+				            'transitionIn'		: 'none',
+				    		'transitionOut'		: 'none',
+				    		'type'				: 'iframe',
+				            'href'              : '/viewfile?cv=/media/publication_files/paper_ueESX1p.pdf'
+				
+				    	});
+				       
+					});
+				
+				
+					
+		
+	
+                                
+				
+				</script>
+		
+				
+
+   			</div>
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+    			    				
+    					
+    					
+    				</td>
+    			</tr>
+    			
+    			<tr>
+    				
+	    			<td id="main-left" class="maincols" >
+	    				
+	    			</td>
+					<td id="main-center" class="maincols" >
+	    				
+	    			</td>
+					<td id="main-right" class="maincols" >
+	    				
+	    			</td>
+		   			<!--div id="sidebar" class="hidden-phone hidden-tablet">
+		   			</div-->
+		   			<!--td id="main-rightsidebar" class="maincols hidden-phone hidden-tablet" >		   				
+	    			</td-->	
+		
+    			</tr>
+    		</table>
+			
+			
+			 
+			<a href="index.html#" id="iconPrint" onclick="window.print();return false;"></a>
+
+		</div>
+		
+
+		
+
+				<div id="footer">       
+        &copy; 2021 Chair of Systems Design | <a  class="path" href="http://www.ethz.ch/index_EN" target="_blank">ETH Zurich</a> |
+    
+              <a class="path"
+                 href="../../imprint.html">Imprint</a> | 
+              <a class="path" href="../../disclaimer.html">Disclaimer</a> | 
+            
+    	23 March 2021
+          
+  
+  
+  		<br/>
+   
+   		<span>POWERED BY</span>
+   
+      	<a href="https://www.djangoproject.com/" target="_blank">
+      		<span>Django</span>
+      	</a>
+	
+			<span>|</span>
+	
+	  	<a href="http://www.feincms.org/" target="_blank">
+      		<span>FeinCMS</span>
+      	</a>
+			<span>|</span>
+	
+      	<a href="http://www.hk.ethz.ch/index_EN" target="_blank">
+      		<span>Corporate Communications</span>
+      	</a>
+</div>
+			
+				 
+		
+
+
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+  <!--[if lt IE 7 ]>
+    <script src="/media/lib/ie/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+  <!--[if IEMobile 7 ]>
+  <script src="/media/lib/mobile/css3-mediaqueries-min.js"></script>
+  <![endif]-->
+
+</body>
+
+
+	
+	 <script>
+	
+	//one day this should all go to a global.js file ..
+	
+	$(document).ready(function() {
+
+             $( "input[date_class='datepicker-default']" ).datepicker({
+                        format:'dd/mm/yyyy'
+             });
+	})
+
+	
+    
+
+</script>
+
+</html>

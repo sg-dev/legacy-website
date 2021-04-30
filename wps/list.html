@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--
+IMPORTANT: THESE TEMPLATES MAY ONLY BE USED WITH THE WRITTEN PERMISSION
+OF VISUAL COMMUNICATIONS (CC),
+   HTTP://WWW.CD.ETHZ.CH
+   -->
+
+
+   <title>CCSS Working Paper Series</title>
+
+
+
+
+   <!-- copyright, author, e-mail address -->
+
+   <meta name="copyright" content="ETH Zuerich" />
+   <meta name="author" content="Claudio J. Tessone" />
+   <meta name="Description" content="ETH Zuerich" />
+
+   <meta name="Keywords" content="ETH Zuerich" />
+
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />      
+
+   <!-- supervision header -->
+   <meta name="Systemueberwachung" content="ETHZ" />
+   <!-- charset, home, base -->
+   <link href="http://www.ethz.ch/" rel="home" />
+   <link rel="SHORTCUT ICON"
+   href="https://www.sg.ethz.ch/icons_site/kuppel_icon_c110.gif" />
+   <link rel="alternate" href="https://www2.sg.ethz.ch/wps/feeds/latest/" type="application/rss+xml" title="Latest CCSS - WPS papers" />
+
+
+   <!-- style sheet -->
+
+   <link rel="stylesheet"  href="https://www.sg.ethz.ch/css/colors_c110.css" type="text/css" /> 
+   <link rel="stylesheet" href="https://www.sg.ethz.ch/css/ns4.css" type="text/css" />      
+   <link rel="stylesheet" href="https://www.sg.ethz.ch/css/modernbrowsers.css" type="text/css" />      
+   <link rel="stylesheet" href="https://www.sg.ethz.ch/css/silva.css" type="text/css" />      
+   <link rel="stylesheet" href="https://www.sg.ethz.ch/css/customstyles.css" type="text/css" />      
+   <link rel="stylesheet" media="print" href="https://www.sg.ethz.ch/css/print.css" type="text/css" />      
+   <style type="text/css"> 
+    input#id_foo { width: 300px; height: 400px; }
+   .logo-bg { background-image: url(https://www.sg.ethz.ch/images/head_bg_logo_home_c110.jpg); background-repeat: no-repeat; } 
+   .identity-image { background-image: url(https://www.sg.ethz.ch/images/head_bg_home_c110.jpg); background-repeat: repeat; }
+   .mainnav, .screenhead, .color5-back, .color4-back, .color3-back, .color2-back, .color1-back,  .servicenav, .transparent {background-image: url(https://www.sg.ethz.ch/icons_site/transparent.gif); }
+</style>
+
+   <style type="text/css">div.navblock, .margins div.contentblock-1col { margin-bottom:0px; }</style>
+
+
+
+
+   <script src="https://www.sg.ethz.ch/scripts/scripts_en.js" type="text/JavaScript"></script>
+
+
+
+   <script src="https://www.sg.ethz.ch/scripts/scripts.js" type="text/JavaScript"></script>
+   <script type="text/javascript" language="JavaScript">
+   function openCenteredWindow(url, height, width, name, parms) {
+	   var left = Math.floor( (screen.width - width) / 2);
+	   var top = Math.floor( (screen.height - height) / 2);
+	   var winParms = "top=" + top + ",left=" + left + ",height=" + height + ",width=" + width;
+	   if (parms) { winParms += "," + parms; }
+	   var win = window.open(url, name, winParms);
+	   if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+	   return win;
+   }
+   function load(id) {
+       document.getElementById('').style.display = "none";
+   }
+ 
+   function openColorWindow() {
+	newwin = openCenteredWindow("colors.html",520,120,"ColorScheme","resizable=yes")}
+	</script>
+
+	</head>
+
+<body bgcolor="#FFFFFF" onload="setup()">
+	<div class="margins" id="bodymargins" style="width:auto;">
+		<a id="top" name="top"></a>
+		<div id="printhead">
+
+			<img alt="printlogo" src="https://www.sg.ethz.ch/icons_site/ethlogo-print.gif" width="220" height="57" />
+		</div>
+		<table id="screenhead" width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr><td width="220" valign="top" class="logo-bg">
+			<map name="logo" id="eulogo">
+			<area shape="rect" coords="10,20,200,70" href="https://www.ethz.ch/index_EN" alt="http://www.ethz.ch/index_EN" title="ETH Zurich - Startpage" />			</map>
+			<img border="0" width="220" height="105" usemap="#logo" alt="ETH Zuerich - Homepage" src="https://www.sg.ethz.ch/icons_site/transparent.gif" /></td>
+			<td width="100%" valign="top" class="identity-image"></td>
+		</tr>
+		</table>
+		<div id="path-service">
+			<div id="pageicons">
+				<div class="servicenav2" id="servicenav2">
+					<a href="javascript:printpage();" class="icon-print" onfocus="if(this.blur)this.blur();" onmouseover="changeText(1);" onmouseout="changeText(0);"><img src="https://www.ethz.ch/icons_site/icon_print.gif" border="0" alt="print" /></a> 
+					<span id="pageicons-text" style="visibility: visible;">&nbsp;&nbsp;</span>
+				</div>
+			</div>
+			<div class="pathline">
+				<a class="path" href="http://www.ethz.ch/index_EN"></a>
+				<a class="path" href="http://www.ethz.ch/index_EN">ETH Zurich</a> -
+				<a class="path" href="http://www.sg.ethz.ch/">Chair of Systems Design</a> -
+				<a class="path" href="http://www.sg.ethz.ch/wps">Working paper series</a> 
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="navblock" id="navblock">
+			<div class="subnav">
+        <div class="subnav-lev1"><a class="subnav-on" href="../wps.html">WPS Home</a></div>
+        <div class="subnav-lev2"><a class="subnav-on" href="list.html">&nbsp; List papers</a></div>
+        <div class="subnav-lev2"><a class="subnav-on" href="search.html">&nbsp; Search papers</a></div>
+<!--         <div class="subnav-lev2"><a class="subnav-on" href="/wps/by_year">&nbsp; Show by year</a></div> -->
+        
+<!--      <div class="subnav-lev1"><a class="subnav-on" href="/wps/accounts/login">User login</a></div>  -->
+        
+        
+        
+    <!--          <div class="subnav-lev1"><a class="subnav-on" href="/wps/faqs">&nbsp; FAQs </a></div> -->
+        <table height=1600px><tr><td>&nbsp;</td></tr></table> 
+			
+			</div>
+		</div>
+		<div class="clearright"></div>
+		<div id="content">
+                        
+                        
+			
+  
+  
+
+
+  <h2>Paper list</h2>
+    <ul class="disc">
+    
+        <li>  <p><a href='CCSS-11-001.html'> <B>CCSS-11-001</B>: Diversification and Financial Stability
+</a>  
+             <br>
+             <b>Authors: </b> Paolo Tasca, Stefano Battiston  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-013.html'> <B>CCSS-10-013</B>: Fundamental and Real-World Challenges in Economics</a>  
+             <br>
+             <b>Authors: </b> Dirk Helbing, Stefano Balietti  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-012.html'> <B>CCSS-10-012</B>: From Assortative to Dissortative Networks:
+The Role of Capacity Constraints</a>  
+             <br>
+             <b>Authors: </b> Michael D. K\&quot;onig, Claudio J. Tessone, Yves Zenou  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-011.html'> <B>CCSS-10-011</B>: Network Evolution Based on Centrality</a>  
+             <br>
+             <b>Authors: </b> Michael D. K{\&quot;o}nig, Claudio J. Tessone  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-010.html'> <B>CCSS-10-010</B>: Using Laboratory Experiments to Study Law and Crime</a>  
+             <br>
+             <b>Authors: </b> Christine Horne, Heiko Rauhut  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-009.html'> <B>CCSS-10-009</B>: Pluralistic Modeling of Complex Systems</a>  
+             <br>
+             <b>Authors: </b> Dirk Helbing  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-008.html'> <B>CCSS-10-008</B>: Sustainable growth in complex networks
+</a>  
+             <br>
+             <b>Authors: </b> Claudio J. Tessone, Markus M. Geipel, F. Schweitzer  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-007.html'> <B>CCSS-10-007</B>: An Agent-Based Model of Collective Emotions in Online Communities</a>  
+             <br>
+             <b>Authors: </b> Frank Schweitzer, David Garcia  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-006.html'> <B>CCSS-10-006</B>: Tactical voting in plurality elections</a>  
+             <br>
+             <b>Authors: </b> Nuno A. M. Araujo, Jose S. Andrade Jr., Hans J. Herrmann  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-005.html'> <B>CCSS-10-005</B>: Explosive percolation via control of the largest cluster</a>  
+             <br>
+             <b>Authors: </b> Nuno A. M. Araujo, Hans J. Herrmann  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-004.html'> <B>CCSS-10-004</B>: On Phase Transitions to Cooperation in the Prisoner&#39;s Dilemma</a>  
+             <br>
+             <b>Authors: </b> Dirk Helbing, Sergi Lozano  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-003.html'> <B>CCSS-10-003</B>: The FuturIcT Knowledge Accelerator: Unleashing the Power of Information for a Sustainable Future </a>  
+             <br>
+             <b>Authors: </b> Dirk Helbing  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-002.html'> <B>CCSS-10-002</B>: Bargaining over time in ultimatum game experiments</a>  
+             <br>
+             <b>Authors: </b> Roger Berger, Heiko Rauhut, Sandra Prade, Dirk Helbing  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-10-001.html'> <B>CCSS-10-001</B>: Disorder-induced volatility of collective dynamics</a>  
+             <br>
+             <b>Authors: </b> Georges Harras, Claudio J. Tessone, Didier Sornette  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-011.html'> <B>CCSS-09-011</B>: Systemic Risk in a Unifying Framework for Cascading Processes on Networks</a>  
+             <br>
+             <b>Authors: </b> Jan Lorenz, Stefano Battiston, Frank Schweitzer  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-010.html'> <B>CCSS-09-010</B>: Economic Networks: What do we know and what do we need to know?</a>  
+             <br>
+             <b>Authors: </b> Frank Schweitzer, Giorgio Fagiolo, Didier Sornette, Fernando Vega-Redondo, Douglas R. White  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-009.html'> <B>CCSS-09-009</B>: The Spatial Variability of Vehicle Densities as Determinant of Urban Network Capacity</a>  
+             <br>
+             <b>Authors: </b> Amin Mazloumian, Nikolas Geroliminis, Dirk Helbing  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-008.html'> <B>CCSS-09-008</B>: Bubble Diagnosis and Prediction of the 2005-2007 and 2008-2009 Chinese stock market bubbles </a>  
+             <br>
+             <b>Authors: </b> Zhi-Qiang Jiang, Wei-Xing Zhou, D. Sornette, Ryan Woodard, Ken Bastiaensen, Peter Cauwels  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-007.html'> <B>CCSS-09-007</B>: Most Efficient Homogeneous Volatility Estimators </a>  
+             <br>
+             <b>Authors: </b> A. Saichev, D. Sornette, V. Filimonov  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-006.html'> <B>CCSS-09-006</B>: A Dynamic Model of Network Formation with Strategic Interactions </a>  
+             <br>
+             <b>Authors: </b> M. Koenig, Claudio J. Tessone, Yves Zenou  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-005.html'> <B>CCSS-09-005</B>: Dragon-Kings, Black Swans and the Prediction of Crises </a>  
+             <br>
+             <b>Authors: </b> D. Sornette  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-004.html'> <B>CCSS-09-004</B>: Punctuated Evolution due to Delayed Carrying Capacity </a>  
+             <br>
+             <b>Authors: </b> V.I. Yukalov, E.P. Yukalova, D. Sornette  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-003.html'> <B>CCSS-09-003</B>: Financial Bubbles, Real Estate bubbles, Derivative Bubbles, and
+ the Financial and Economic Crisis</a>  
+             <br>
+             <b>Authors: </b> D. Sornette, R. Woodard  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-002.html'> <B>CCSS-09-002</B>: A Consistent Model of `Explosive&#39; Financial Bubbles With Mean-Reversing Residuals </a>  
+             <br>
+             <b>Authors: </b> L. Lin, Ren R.E., D. Sornette  </p>
+        </li>      
+    
+        <li>  <p><a href='CCSS-09-001.html'> <B>CCSS-09-001</B>: How to make a fragile network robust and vice versa </a>  
+             <br>
+             <b>Authors: </b> Andre A. Moreira, Jose S. Andrade Jr., Hans J. Herrmann, Joseph O. Indekeu  </p>
+        </li>      
+    
+  
+    </ul>
+
+		</div>
+		<div class="clearboth"></div>
+<!-- note for netscape 4.x users -->
+<p id="ns4note" class="note"><strong><font size="+1">Wichtiger Hinweis:</font><br />
+Diese Website wird in &auml;lteren Versionen von Netscape ohne graphische Elemente dargestellt. Die Funktionalit&auml;t der Website ist aber trotzdem gew&auml;hrleistet. Wenn Sie diese Website regelm&auml;ssig benutzen, empfehlen wir Ihnen,
+      auf Ihrem Computer einen aktuellen Browser zu installieren. Weitere Informationen finden Sie auf<br />
+      <a href="http://www.weboffice.ethz.ch/webcd_wcms/">folgender Seite</a>.<br />
+      <br />
+      <font>Important Note:</font><br />
+      The content in this site is accessible to any browser or Internet device, however, some graphics will display correctly only in the newer versions of Netscape. To get the most out of our site we suggest you upgrade to a newer browser.<br />
+      <!--       <a href="http://www.weboffice.ethz.ch/webcd_wcms/">More information</a></strong></p>
+      		<div class="footerblock">
+      			<div class="footerline">
+      				&copy; 2009 <a class="path" href="http://www.ethz.ch/index_EN">ETH Zurich</a> 
+      			</div>
+      		</div> -->
+      <!-- END footer -->
+      </div>
+      </body>
+      </html>
+
